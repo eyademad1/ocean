@@ -8,7 +8,7 @@ export interface Features{
     content: string
 }
 
-export interface featuresBlock extends Features{
+export interface FeaturesBlock extends Features{
     isReversed? :boolean
 }
 
@@ -33,5 +33,5 @@ export interface FooterColumn {
     title: string;
     links: string[];
   }
-  
+
 export type PricingMode = "monthly" | "annually"

@@ -1,11 +1,11 @@
-import { featuresBlock } from '@/types/interfaces'
+import type { FeaturesBlock } from '@/types/interfaces'
 import Image from 'next/image'
 import React, { FC } from 'react'
 import Heading from '@/components/Heading'
 {}
-type FeaturesBlock = featuresBlock
+type FeaturesBlockProps = FeaturesBlock
 
-const FeaturesBlock: FC<FeaturesBlock> = ({imageUrl, title, content, isReversed}) => {
+const FeaturesBlock: FC<FeaturesBlockProps> = ({imageUrl, title, content, isReversed}) => {
   return (
     <article className= {`flex flex-col lg:flex-row items-center justify-between gap-8 ${isReversed&& "lg:flex-row-reverse"}`}>
       <Image
