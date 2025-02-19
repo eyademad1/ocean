@@ -2,7 +2,7 @@ import { Features } from '@/types/interfaces'
 import Image from 'next/image'
 import React, { FC } from 'react'
 
-interface FeaturesCardProps extends Features{}
+type FeaturesCardProps = Features
 
 const FeaturesCard:FC<FeaturesCardProps> = ({imageUrl, title, content}) => {
   return (

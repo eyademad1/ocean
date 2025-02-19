@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { FC } from 'react'
 import Heading from '@/components/Heading'
 {}
-interface FeaturesBlock extends featuresBlock{}
+type FeaturesBlock = featuresBlock
 
 const FeaturesBlock: FC<FeaturesBlock> = ({imageUrl, title, content, isReversed}) => {
   return (

@@ -6,7 +6,7 @@ interface ButtonProps{
     children: ReactNode
 }
 
-const Button: FC<ButtonProps> = ({variant = "primary", IsFullSize, children}) => {
+const Button: FC<ButtonProps> = ({variant = "primary", children}) => {
   return (
     <button className={`btn  ${variant === "primary"? "btn-primary" : variant === "secondary"? "btn-secondary" : "btn-outline" } `}>
       {children}
